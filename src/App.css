@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+#coin-panel{
+    height: 71.5vh !important;
+    overflow-y: scroll;
+}
+.coin-main-panel{
+    border-radius: 1.5rem;
+}
+::placeholder{
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 0rem;
+}
+input:focus{
+    outline: none;
+}
+.my-search-bar{
+    background-color: #0C59F2;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    height: 3em;
+    padding-left: 7%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#right-panel{
+    height: 88vh;
+    width: 63vw;
+    border-radius: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blue-coin-panel{
+    background-color: #0C59F2;
+    border-radius: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.img-bg-box{
+    background-color: white;
+    border-radius: 1.5rem;
+    width: auto;
+    height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.coin-img{
+    width: 3vw;
+    height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.time-panel{
+    background-color: #0C59F1 !important;
+    border-radius: 1.5rem;
+}
+
+.box-shadow{
+    box-shadow: .3em .5em 2px rgb(231, 231, 231) !important;
+}
+
+#left-panel{
+    transition: .9s;
+}
+#right-panel{
+    transition: .9s;
+}
+.expanded-view{
+    padding-left: 20rem !important;
+    padding-right: 20rem !important;
 }

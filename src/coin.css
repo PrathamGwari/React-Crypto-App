@@ -1,0 +1,17 @@
+.coin-container{
+    border: none;
+    border-radius: .7em;
+    background-color: #0C59F2 !important;
+}
+.resp-name{
+    font-size: 1.3rem;
+}
+
+.box-shadow{
+    box-shadow: .3em .5em 5px rgb(209, 206, 206) !important;
+}
+
+.coin-img-container{
+    border: none;
+    border-radius: 1.2rem !important;
+}
