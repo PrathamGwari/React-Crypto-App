@@ -18,7 +18,7 @@ const Coin = ({id, setSelectedCoin, img, name, price, change})=>{
             <div className="row d-flex align-items-center">
                 {/* coin image */}
                 <div className="col-5 text-center py-2 px-3">
-                    <div className="bg-light coin-img-container p-2"><img className="img-fluid" width="40rem" src={img} alt='coin image' /></div>
+                    <div className="bg-light coin-img-container p-2"><img className="img-fluid" width="40rem" src={img} alt='' /></div>
                 </div>
 
                 {/* coin name */}

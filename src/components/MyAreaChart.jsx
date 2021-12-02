@@ -62,18 +62,8 @@ const MyAreaChart = ({selectedCoin, x, y})=>{
         btns.current[idx].classList.add('active');
     }
 
-    useEffect( async ()=>{
-        const minUrl = `https://api.coingecko.com/api/v3/coins/${selectedCoin.id}/market_chart?vs_currency=inr&days=0.03&interval=minutely`;
-        const response = await axios.get(minUrl);
-
-        console.log(`%c ${response.data.prices}`, 'background-color: blue;');
-
-        console.log("coin changed to " + selectedCoin.name);
-
-        console.log(response.data.prices);
-
-        ActivateBtn(0);
-        getGraphData(response.data ,"min");
+    useEffect(()=>{
+        getMinData();
     }, [selectedCoin])
 
     const getMinData = async ()=>{
