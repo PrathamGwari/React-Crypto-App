@@ -3,6 +3,9 @@
     border-radius: .7em;
     background-color: #0C59F2 !important;
 }
+.coin-container :hover{
+    cursor: pointer;
+}
 .resp-name{
     font-size: 1.3rem;
 }
