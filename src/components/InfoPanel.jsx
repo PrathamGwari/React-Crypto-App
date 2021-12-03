@@ -19,7 +19,7 @@ const InfoPanel = ({selectedCoin})=>{
                 {/* price change */}
                 <div className="col-md-3 display-5 text-dark">
                     <div className="row my-2 mx-2 bg-white img-bg-box shadow">
-                    <center>{selectedCoin.change == null? '' : selectedCoin.change.toFixed(1)}</center>
+                    <center>{selectedCoin.change == null? '' : selectedCoin.change < 0 ? selectedCoin.change.toFixed(1) : `+${selectedCoin.change.toFixed(1)}`}</center>
                     </div>
                 </div>
             </div>
